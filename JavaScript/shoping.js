@@ -28,7 +28,7 @@ class Shopping {
            		<span class="hideCartjsTwo"></span>
             	<span class="hideCartNoneJs"></span>
             </div>
-        <form method="POST" action="localhost:3001/Gare.com.html">
+        <form method="POST" action="http//:localhost:3001/Gare.com.html">
             <table>
                 ${htmlCatalog}
                     <tr>
