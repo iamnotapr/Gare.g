@@ -12,8 +12,8 @@ class Shopping {
         CATALOG.forEach(({ id, name, price, }) => {
             if (productsStore.indexOf(id) !== -1) {
                 htmlCatalog += `
-                    <tr name="element_name">
-                        <td class="shopping_element_name">${name}</td>
+                    <tr>
+                        <td class="shopping_element_name" type="text" name="element_name">${name}</td>
                         <td class="shopping_element_price">${price} ₽</td>
                     </tr>
                 `;
@@ -29,7 +29,7 @@ class Shopping {
             	<span class="hideCartNoneJs"></span>
             </div>
         <form method="POST" action="http://localhost:3001/gareg">
-            <table name="catalog">
+            <table>
                 ${htmlCatalog}
                     <tr>
                         <td class="shopping_element_name">Полная сумма:</td>
