@@ -12,12 +12,10 @@ class Shopping {
         CATALOG.forEach(({ id, name, price, }) => {
             if (productsStore.indexOf(id) !== -1) {
                 htmlCatalog += `
-                <form method="Get">
-                    <tr>
-                        <td class="shopping_element_name" name="element_name">${name}</td>
+                    <tr name="element_name">
+                        <td class="shopping_element_name">${name}</td>
                         <td class="shopping_element_price">${price} ₽</td>
                     </tr>
-                </form>
                 `;
                 	 sumCatalog += price;
             }
