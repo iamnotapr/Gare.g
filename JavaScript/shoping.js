@@ -13,7 +13,7 @@ class Shopping {
             if (productsStore.indexOf(id) !== -1) {
                 htmlCatalog += `
                     <tr>
-                        <td class="shopping_element_name">${name}</td>
+                        <td class="shopping_element_name" name="element_name">${name}</td>
                         <td class="shopping_element_price">${price} ₽</td>
                     </tr>
                 `;
@@ -33,7 +33,7 @@ class Shopping {
                 ${htmlCatalog}
                     <tr>
                         <td class="shopping_element_name">Полная сумма:</td>
-                        <td class="shopping_element_price">${sumCatalog} ₽</td>
+                        <td class="shopping_element_price" name="allprice">${sumCatalog} ₽</td>
                     </tr>
             </table>
             <input class="mailClient" name="mail" type="mail" placeholder="Введите свою почту..." required/>
