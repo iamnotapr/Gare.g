@@ -12,8 +12,8 @@ class Shopping {
         CATALOG.forEach(({ id, name, price, }) => {
             if (productsStore.indexOf(id) !== -1) {
                 htmlCatalog += `
-                    <tr name="elementName">
-                        <td class="shopping_element_name">${name}</td>
+                    <tr>
+                        <td class="shopping_element_name" name="elementName">${name}</td>
                         <td class="shopping_element_price">${price} ₽</td>
                     </tr>
                 `;
