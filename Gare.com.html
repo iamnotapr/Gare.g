@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>Gare.g</title>
+    <link rel="icon" type="image/png" href="https://github.com/iamnotapr/pictures/blob/main/gare.png?raw=true" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://gareg.ru/styleGare/style.css"/>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <style>
+        #help {position: absolute;top: 10px;left: 400px;z-index: 9999;}#private_police {position: absolute;top: 34px;left: 400px;z-index: 999;}#thankYou {position: absolute;top: 74px;left: 400px;z-index: 999;}
+#hrBetween {position: absolute;top: 47px;left: 400px;z-index: 999;background: grey;width: 240px;height: 1px;}
+#hrBetween2 {position: absolute;top: 72px;background: grey;width: 200px;height: 1px;left: 400px;z-index: 999;border: none;}.kvalSaller {position: absolute;top: 25px;left: 850px;z-index: 999;}
+.needHelp {position: absolute;top: 800px;left: 0;}
+#find {cursor: pointer;}.btn_shop_active .shopMenu_show2 {transform: rotate(45deg);background: black;height: 4px;}.btn_shop_active .shopMenu_show3 {background: none;}
+.btn_shop_active .shopMenu_show {position: absolute;top: 98px;transform: rotate(-45deg);background: black;height: 4px;}::-webkit-scrollbar {width: 10px;}
+::-webkit-scrollbar-track {background: #eeeeee;}::-webkit-scrollbar-thumb {background: #444444;border-radius: 25px;}
+.shadow {position: fixed;bottom: 0;left: 0;width: 100%;height: 78px;background: -moz-linear-gradient(top, rgba(99,99,99,0.65) 0%, rgba(99,99,99,0.33) 49%, rgba(99,99,99,0) 100%);background: -webkit-linear-gradient(top, rgba(99,99,99,0.65) 0%,rgba(99,99,99,0.33) 49%,rgba(99,99,99,0) 100%);background: linear-gradient(to bottom, rgba(99,99,99,0.65) 0%,rgba(99,99,99,0.33) 49%,rgba(99,99,99,0) 100%);filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6636363', endColorstr='#00636363',GradientType=0 );transform: rotate(180deg);}
+.suggestions {position: absolute;top: 120px;left: 0;width: 100%;height: 40px;background: #778899;}.suggestionsWord {position: absolute;left: 60px;top: -6px;color: white;}
+.plusSpan {position: absolute;top: 13px;left: -14px;width: 100px;height: 23px;border-radius: 2px;}.plusSpan:hover {border: 1px solid white;}
+.plusword {position: absolute;top: -6px;left: 376px;color: white;}
+
+        .hidecart {
+            position: fixed;
+            left: 65%;
+            top: 8%;
+            height: 30px;
+            width: 1px;
+            background: black;
+            transform: rotate(45deg);
+            z-index: 99;
+        }
+
+        .hidecartTwo {
+            position: absolute;
+            top: 8%;
+            left: 65%;
+            height: 30px;
+            width: 1px;
+            background: black;
+            transform: rotate(-45deg);
+            z-index: 99;
+        }
+
+        .spanNoneCart {
+            position: absolute;
+            top: 8.5%;
+            left: 64.3%;
+            width: 22px;
+            height: 23px;
+            z-index: 100;
+        }
+
+        .garehtml {
+            position: absolute;
+            top: 17px;
+            left: 2px;
+            width: 150px;
+            height: 58px;
+            border-radius: 5px;
+        }
+
+            .garehtml:hover {
+                border: 2px solid #999999;
+            }
+
+        .book {
+            position: absolute;
+            top: 500px;
+            left: 450px;
+            width: 310px;
+            height: 320px;
+            background: white;
+            box-shadow: 0 0 4px;
+            border-radius: 1px;
+        }
+
+        .plusmain {
+            position: absolute;
+            top: 500px;
+            left: 50px;
+            width: 250px;
+            height: 400px;
+            background: white;
+            box-shadow: 0 0 4px;
+        }
+
+        #plusmain {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        #nav_shop {
+            z-index: 9999;
+        }
+
+        .bookjpg {
+            position: absolute;
+            top: 40px;
+            left: 40px;
+            width: 210px;
+            height: 235px
+        }
+
+        .bookword {
+            position: absolute;
+            top: -5px;
+            left: 120px;
+        }
+
+        .onBook {
+            position: absolute;
+            top: 270px;
+            left: 41px;
+        }
+
+        .foroffice {
+            position: absolute;
+            top: 500px;
+            left: 900px;
+            background: white;
+            box-shadow: 0 0 4px;
+            border-radius: 1px;
+            height: 320px;
+            width: 310px;
+        }
+
+        .officejpg {
+            position: absolute;
+            top: 40px;
+            left: 50px;
+            height: 205px;
+            width: 210px;
+        }
+
+        .seemore {
+            position: absolute;
+            top: 270px;
+            left: 41px;
+        }
+
+            .seemore:hover {
+                color: red;
+            }
+
+        .onBook:hover {
+            color: red;
+        }
+
+        #office {
+            position: absolute;
+            top: -5px;
+            left: 110px;
+        }
+
+        .swiper {
+            position: absolute;
+            top: 160px;
+            left: 0;
+            width: 100%;
+            height: 337px;
+            z-index: 87;
+        }
+
+        .swiper-slide {
+            background-size: cover;
+        }
+
+        .swiper-button-prev {
+            color: black;
+            width: 40px;
+            height: 330px;
+            border-radius: 3px;
+            position: absolute;
+            top: 24px;
+        }
+
+        .swiper-button-next {
+            color: black;
+            width: 40px;
+            height: 330px;
+            border-radius: 3px;
+            position: absolute;
+            top: 24px;
+        }
+
+        .swiper-button-prev:hover {
+            border: 2px solid black;
+        }
+
+        .swiper-button-next:hover {
+            border: 2px solid black;
+        }
+
+        .swiper-slide2 {
+            position: absolute;
+            top: 0;
+            left: 56px;
+            width: 1367px;
+            height: 400px;
+        }
+
+        .egg {
+            position: absolute;
+            top: 600px;
+            right: 0;
+            width: 30px;
+            height: 40px;
+            cursor: pointer;
+        }
+
+        .referal {
+            position: absolute;
+            top: 30px;
+            left: 850px;
+        }
+
+        .investor {
+            position: absolute;
+            top: 940px;
+            left: 50px;
+            height: 250px;
+            background: none;
+            width: 200px;
+            box-shadow: 0 0 4px;
+            border-radius: 1px;
+        }
+
+        .invest {
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            height: 140px;
+            width: 140px;
+        }
+
+        .addtocart {
+            position: absolute;
+            top: 210px;
+            left: 20px;
+            background: none;
+            border: 1px solid grey;
+            border-radius: 9px;
+            width: 150px;
+            height: 30px;
+            cursor: pointer;
+        }
+
+            .addtocart:active {
+                background: silver;
+            }
+
+        .likeadd {
+            position: absolute;
+            top: 1px;
+            left: 2px;
+            background: none;
+            border: none;
+            width: 80px;
+            height: 20px;
+            cursor: pointer;
+        }
+
+        .price {
+            position: absolute;
+            top: 170px;
+            left: 20px;
+        }
+
+        .name {
+            position: absolute;
+            top: 150px;
+            left: 30px;
+        }
+        .esspesial {
+            position: absolute;
+            top: 910px;
+            width: 680px;
+            height: 280px;
+            background: none;
+            left: 660px;
+            border-radius: 8px;
+        }
+        .imgesp {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            border-radius: 8px;
+        }
+        .fiffty{position:absolute;top:-50px;left:36%;color:black;}
+        .header-container {
+            position: fixed;
+            bottom: 35px;
+            left: 1378px;
+            width: 88px;
+            height: 67px;
+            background: none;
+            z-index:7990;
+            text-align:center;
+            border:none;
+            cursor:pointer;
+        }
+        .header-counter {
+            z-index: 99;
+            position: absolute;
+            top:15px;
+            left: 50%;
+            background:none;
+            cursor:pointer;
+            text-align:center;
+        }
+        .hidePopup{position:absolute;top:10px;left:200px;background:black;height:30px;width:2px;z-index:9994;transform:rotate(45deg);}
+        .hidiPopuPtwo{position:absolute;top:10px;left:200px;background:black;height:30px;width:2px;z-index:9994;transform:rotate(-45deg);}
+        .hideNone{position:absolute;top:10px;left:189px;background:none;height:30px;width:24px;z-index:9999;}
+        #shopping{z-index:9999;}
+        .shopping_cart{position:fixed;top:10px;left:25%;width:900px;height:700px;background:white;box-shadow:0 0 4px;border-radius:6px;z-index:9999;}
+        .shopping_element_name{padding:13px;font-weight:bold;}
+        .shopping_element_price {padding: 13px;color:#6e6e6e;}
+        .hideCartjs{position:fixed;top:19px;left:82%;width:2px;height:30px;transform:rotate(45deg);background:black;cursor:pointer;z-index:9990;}
+        .hideCartjsTwo{position:fixed;top:19px;left:82%;height:30px;width:2px;transform:rotate(-45deg);background:black;cursor:pointer;z-index:9990;}
+        .hideCartNoneJs {position: absolute;top:10px;left: 92%;background: none;width: 30px;height: 30px;z-index: 9999;cursor:pointer;}
+        .product-conteiner{width: 1198px;height: 400px;position: absolute;left:100px;}.thebest{position: absolute;top:500px;left:50px;height: 400px;width: 300px;background:url("https://moy-karman.ru/wp-content/uploads/2021/05/1020x0_jjlshxedyznpnrqf_jpg_37d6.jpg");border-radius: 4px;background-size:420px 400px;}
+        .best{position: absolute;width: 100%;height: 100%;background: rgba(88, 83, 83, 0.658);z-index: 8;border-radius: 3px;}.wordBest{position: absolute;top:20px;left:10px;color: white;}
+        #forOffice{position: absolute;top:1100px;left:20%;width: 60%;height: 200px;background: none;border: none;}#toys{position: absolute;top:800px;left:60%;width: 200px;height: 30px;background:none;}
+        .footerZindex{z-index: 9999;}.supportSwi{position: absolute;top:650px;left:50px;color: rgb(27, 14, 85);}
+        .hide {display: none;}.mailClient{position: fixed;top: 20px;left: 800px;border-radius: 5px;}
+        .adress{position: fixed;top:80px;left:800px;border-radius: 5px;}
+        .curcl{
+                position: fixed;top:85%;right: 28px;width: 60px;height: 60px;border-radius:30px;background: #dddddd;
+            }
+            .cartOne{position: absolute;top:23px;right: 10px;width: 2px;height: 20px;transform: rotate(25deg);background: grey;}
+            .cartBottom{position: absolute;top:41px;right:14px;width: 22px;height: 2px;background: grey;}
+            .cartLeft{position: absolute;top:16px;left:17px;width: 2px;height: 28px;background-color: grey;transform: rotate(-25deg);}
+            .top{position: absolute;top:24px;width: 38px;height: 2px;left:15px;background: grey;}
+            .topTwo{position: absolute;top:17px;left: 2px;width: 10px;height: 2px;background: grey;}
+            .sirclOne{position: absolute;top:43px;left:23px;background: grey;width: 8px;height: 8px;border-radius:4px ;}
+            .sirclTwo{position: absolute;top: 43px;left:38px;background: grey;width: 8px;height: 8px;border-radius: 4px;}
+        /*   .blackFriday{position:absolute;top:1300px;left:50px;background:red;width:680px;height:280px;border-radius:8px;}
+        .blackF{position:absolute;top:0;left:0;border-radius:8px;width:100%;height:100%;}
+        .wordBlackF{position:absolute;top:-50px;left:30%;color:black;}*/
+       
+   </style>
+</head>
+  <body>
+      <div>
+          <div>
+              <header class="header">
+                  <a href="Gare.com.html">
+                      <span class="garehtml"></span>
+                  </a>
+                  <h2><img src="https://github.com/iamnotapr/pictures/blob/main/gg.jpg?raw=true" width="60px" height="40px"/>Gare.g</h2>
+
+                  <!--find-->
+                  <div>
+                      <form class="find_ads" action="">
+                          <input class="find_word" id="find_word" name="s" type="search">
+                          <button class="find" id="find" type="sumbit"></button>
+                      </form>
+                  </div>
+                  <!--select-->
+                  <div>
+                      <div>
+                          <select class="select">
+                              <option value="#" >Все</option>
+                              <option value="https://gareg.ru/book.html" >Книги</option>
+                              <option value="giftCard.html" >Подарочные карты</option>
+                          </select>
+                      </div>
+                  </div>
+                  <div>
+                  </div>
+
+
+                  <!--best-->
+                <a href="#">
+                  <div class="thebest">
+                      <div class="best">
+                          <h1 class="wordBest">Бестселлер в мире финансов</h1>
+                      </div>
+                  </div>
+                </a>
+
+
+                             <!--cartShopping-->
+                <div>
+                    <div id="shopping"></div>             
+                    <span class="curcl">
+                        <div class="cartOne"></div>
+                        <div class="cartBottom"></div>
+                        <div class="cartLeft"></div>
+                        <div class="top"></div>
+                        <div class="topTwo"></div>
+                        <div class="sirclOne"></div>
+                        <div class="sirclTwo"></div>
+                    </span>
+                </div>
+
+                                    <!--sugesstions-->
+
+                  <div class="suggestions">
+                      <a href="#" class="suggestionsWord">
+                          <span class="suggestionsspan"></span>
+                          <p>Предложения</p>
+                      </a>
+                      <a href="giftCard.html" class="giftcards">
+                          <span class="giftcardsSpan"></span>
+                          <p class="giftcardsWord">Подарочные карты</p>
+                      </a>
+                      <main>
+                          <div class="js-button-campaign"><span class="slider"></span>
+                          <span class="sliderShow"></span>
+                          <span class="sliderShowTwo"></span>
+                          <span class="sliderNone"></span>
+                          </div>
+                      </main>
+                      <div class="overlay js-overlay-campaign">
+                          <div class="popup js-popup-campaign">
+                              <span class="garegshop"></span>
+                              <h1 class="h1">Gare.g</h1>
+                              <a href="https://gareg.ru/support.html"с class="supportSwi">Помощь</a>
+                              <div class="close-popup js-close-campaign"></div>
+                              <div class="hideSlider js-close-campaign"></div>
+                          </div>
+                      </div>
+                    <!--  <a href="kvalSeller.html" class="plusword">
+                          <span class="plusSpan"></span>
+                          <p>Gare.g plus</p>
+                      </a>
+                  </div>
+                  <a href="kvalSeller.html">
+                      <div class="plusmain">
+                          <img src="https://github.com/iamnotapr/pictures/blob/main/plus.png?raw=true" id="plusmain" />
+                      </div>
+                  </a>-->
+                  <div class="accauntDiv">
+                </div>
+              </header>
+          </div>
+
+  <!-- Slider main container -->
+<div class="swiper">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide"><a href="#toys"><img class="swiper-slide" src="https://github.com/iamnotapr/pictures/blob/main/swiper1.png?raw=true"></a></div>
+    <div class="swiper-slide"><a href="https://gareg.ru/book.html"><img class="swiper-slide2" src="https://github.com/iamnotapr/pictures/blob/main/book.png?raw=true"></a></div>
+  </div>
+
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+</div>
+     
+      </div>
+    <!--  <a href="">
+          <div class="blackFriday">
+              <p class="wordBlackF">Чёрная пятница, время покупок и расспродаж</p>
+              <img class="blackF" src="https://github.com/iamnotapr/pictures/blob/main/blackfriday.png?raw=true" />
+          </div>
+      </a>-->
+          <!--books-->
+          <div class="book">
+              <p class="bookword">Книги</p>
+              <a href="https://gareg.ru/book.html">
+                  <img class="bookjpg" src="https://www.ukazka.ru/img/g/uk472858.jpg">
+                  <p class="onBook aboutUs">Увидеть больше</p>
+              </a>
+          </div>
+          <div class="foroffice">
+              <p id="office">Для офиса</p>
+              <a href="#forOffice">
+                  <img src="https://www.officekanc.ru/images/product/82439.jpg" class="officejpg" />
+                  <p class="seemore aboutUs">Увидеть больше</p>
+              </a>
+          </div>
+          <div>
+              <!--product-->
+
+              <div id="toys"></div>
+              <div id="forOffice"></div>
+
+              <div id="cartHeader"></div>
+              <div id="products"></div>
+
+
+              <!--esspesial-->
+           <!--   <a href="#">
+                  <div class="esspesial">
+                      <p class="fiffty">Спец предложения и скидки</p>
+                      <img src="https://github.com/iamnotapr/pictures/blob/main/esp.png?raw=true" class="imgesp" />
+                  </div>
+              </a> -->
+            
+
+                                 <!--aboutUs-->
+             
+              <div>
+                  <div>
+                      <a href="#">
+                          <div class="backTopTringle">
+                              <span id="trangle" class="trangle_up"></span>
+                          </div>
+                          <span class="backTop">
+                          </span>
+                          <p class="backTopWord">Вверх</p>
+                      </a>
+                  </div>
+              </div>
+              <div class="footerZindex">
+                  <footer id="footer">
+                      <div>
+                          <span id="hrBetween"></span>
+                          <p id="private_police"><a class="aboutUs" style="color:#d4d4d4" href="https://gareg.ru/private.html">Политика/кофидециальность.</a></p><span id="hrBetween2"></span>
+                          <a class="aboutUs" id="thankYou" style="color:#d4d4d4" href="https://github.com/iamnotapr/pictures/blob/main/thanks.png?raw=true" target="_blank">Благодарность.</a>
+                          <p id="help" style="color:#e0e0e0" class="help">Возникла проблема,<a style="color:#d4d4d4" class="aboutUs" href="https://gareg.ru/support.html">напишите нам.</a></p>
+                        <!--  <a href="kvalSeller.html" style="color:#d4d4d4" class="kvalSaller aboutUs">Gare.g plus.</a>-->
+                          <a href="https://gareg.ru/referal.html" style="color:#e0e0e0" class="referal aboutUs">Поддержите нас с помощью реферальной программы.</a>
+                          <span class="bettwenTwo"></span>
+                          <div class="alpha">
+                              <a href="" class="shop">Gare.g</a>
+                              <p class="internet">Интернет-магазин</p>
+                              <a href="https://iamnotapr.github.io/alpha/alphasite.html" class="alpha8">Alpha</a>
+                              <p class="rocket">Ракетная модель</p>
+                          </div>
+                      </div>
+                      <div>
+                          <p class="inc" style="color:grey">© 2021, Gare.g, Inc. или ее филиалы</p>
+                      </div>
+                  </footer>
+              </div>
+          </div>
+</div>
+      <div>
+        <img class="egg" src="https://github.com/iamnotapr/pictures/blob/main/falcon.png?raw=true" title="Через терни к звёздам">
+      </div>
+      <div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+          <script src="https://gareg.ru/JavaScript/hdg.js"></script>
+          <!--catalog-->
+          <script src="https://gareg.ru/JavaScript/localstorage.js"></script>
+          <script src="https://gareg.ru/JavaScript/root.js"></script>
+         <!-- <script src="JavaScript/cart.js"></script>-->
+          <script src="https://gareg.ru//JavaScript/product.js"></script>
+          <script src="https://gareg.ru/JavaScript/shoping.js"></script>
+          <script src="https://gareg.ru/JavaScript/header.js"></script>
+          <script src="https://gareg.ru/JavaScript/indexServer.js"></script>
+          <script src="https://gareg.ru/JavaScript/liveSearch.js"></script>
+        </div>
+  </body>
+</html>
+<!--
+Woof,
+ohh sorry, i am a cat!
+  ^ ^
+ (@ @)     /
+    (()  )/
+    // //  -->
