@@ -1,0 +1,4 @@
+/*adaptive*/
+@media only screen and (max-width: 768px) {
+    .suggestions{height: 80px;width: 100%;background: red;}
+}
