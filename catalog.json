@@ -1,0 +1,57 @@
+[
+    {
+        "id": "1",
+        "price": 780,
+        "name": "Манифест инвестора",
+        "img": "https://www.ukazka.ru/img/g/uk472858.jpg"
+    },
+    {
+        "id": "2",
+        "price":840,
+        "name": "Вся физика на ладони",
+        "img":"https://media.b-stock.ru/gallery/4579583.jpeg"
+    },
+
+    {    
+        "id":"3",
+        "price": 300,
+        "name": "Зил-130 бензовоз",
+        "img":"https://igr.ru/upload/images/240255/1000x1000/c240255.jpg"
+    },
+    {
+        "id":"4",
+        "price": 300,
+        "name":"Зил-130 бортовой",
+        "img":"https://www.esky.ru/upload/cimg_cache/3ec/3ecc3c3a12fa338529af4bf8787dc0be/es_gl000490326_001.jpg"
+    },
+    {
+        "id":"5",
+        "price": 20,
+        "name":"Ластик PROGRESSO",
+        "img":"https://arsenal007.ru/upload/iblock/cf4/lastik-koh-i-noor-progresso-60-kombinirovannyy-kauchuk-57-14-8mm-art-027653.jpg"
+    },
+    {
+        "id":"6",
+        "price": 120,
+        "name":"Карандашница",
+        "img":"https://www.officekanc.ru/images/product/mid/51069.jpg"
+    },
+    {
+        "id":"7",
+        "price": 10,
+        "name":"Красная геливая ручка attomex",
+        "img":"https://github.com/iamnotapr/pictures/blob/main/attomex.png?raw=true"
+    },
+    {
+        "id":"8",
+        "price": 220,
+        "name":"Paint marker",
+        "img":"https://images.by.prom.st/142150822_w640_h640_marker-kraska-belyj-na.jpg"
+    },
+    {
+        "id":"9",
+        "price": 45,
+        "name":"Корректирующий карандаш",
+        "img":"https://avatars.mds.yandex.net/get-mpic/5217690/img_id5820140095820962604.jpeg/orig"
+    }
+]
