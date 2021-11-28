@@ -14,8 +14,7 @@
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <style>
         #help {position: absolute;top: 10px;left: 400px;z-index: 9999;}#private_police {position: absolute;top: 34px;left: 400px;z-index: 999;}#thankYou {position: absolute;top: 74px;left: 400px;z-index: 999;}
-#hrBetween {position: absolute;top: 47px;left: 400px;z-index: 999;background: grey;width: 240px;height: 1px;}
-#hrBetween2 {position: absolute;top: 72px;background: grey;width: 200px;height: 1px;left: 400px;z-index: 999;border: none;}.kvalSaller {position: absolute;top: 25px;left: 850px;z-index: 999;}
+.kvalSaller {position: absolute;top: 25px;left: 850px;z-index: 999;}
 .needHelp {position: absolute;top: 800px;left: 0;}
 #find {cursor: pointer;}.btn_shop_active .shopMenu_show2 {transform: rotate(45deg);background: black;height: 4px;}.btn_shop_active .shopMenu_show3 {background: none;}
 .btn_shop_active .shopMenu_show {position: absolute;top: 98px;transform: rotate(-45deg);background: black;height: 4px;}::-webkit-scrollbar {width: 10px;}
@@ -377,22 +376,32 @@
     .foroffice{position: absolute;top:700px;left:1000px;width: 330px;height: 400px;}
     .officejpg{position: absolute;top:110px;left:40px;}
     .seemore{position: absolute;top:310px;left:70px;font-size: 30px;}
-    #footer{width: 1510px;position: absolute;top:3100px;height: 700px;}.header-container{position: absolute;}
+    #footer{width: 1510px;position: absolute;top:3200px;height: 700px;}.header-container{position: absolute;}
     .curcl{background: none;}
     .cartOne{position: fixed;top:2230px;right: 70px;z-index: 999;height: 50px;width: 6px;}
     .cartBottom{position: fixed;top:2280px;right: 80px;width: 50px;height: 6px;}
     /*product*/
     .product-conteiner{position: absolute;top:1300px;height: 1500px;display: grid;grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 45px;left:200px;width: 1100px;}
-    .product-element{width: 300px;height: 400px;border-radius: 12px;}
+    .product-element{width: 330px;height: 450px;border-radius: 12px;}
+    .img_product{width: 270px;height: 300px;}
+    .price_product{font-size: 40px;}
+    #btn_product{font-size: 25px;width: 280px;}
+    .price_product{font-size: 36px;}.name_product{font-size: 40px;}
     /*another*/
-    .backTop{position: absolute;top:2900px;height: 100px;width: 1506px;}
+    .backTop{position: absolute;top:3000px;height: 100px;width: 1506px;}
     .trangle_up{background: none;color: none;position: absolute;top:180px;left:0;}
     #trangle{background: none;color: none;}.backTopTringle{background: none;color: none;}
-    .backTopWord{position: absolute;top:2890px;font-size: 40px;left:700px;}
-    .private_police{font-size: 50px;position: absolute;}
-        }
-    
+    .backTopWord{position: absolute;top:2990px;font-size: 40px;left:700px;}
+    #office{font-size: 40px;position: absolute;left:50px;}
+    .alpha{position: absolute;top:580px;}.shop{font-size: 45px;position: absolute;top:-2px;left:300px}
+    .internet{position: absolute;font-size: 38px;left: 230px;top:10px}
+    .alpha8{position: absolute;font-size:45px ;top:-2px;left:1100px;}.rocket{position: absolute;top:10px;left:1030px;font-size: 38px;}
+    .inc{position: absolute;top:450px;font-size: 40px;left: 400px;}#private_police{position: absolute;top:20px;font-size: 40px;left:90px;}
+    #thankYou{position: absolute;top:140px;font-size: 40px;left:90px;}#help{position: absolute;top:190px;left:90px;font-size: 40px;}
+    .bettwenTwo{position: absolute;top:10px;left:730px;height: 400px;width: 5px;background: grey;}
+    .referal{position: absolute;top:20px;left:850px;font-size: 40px;}
+    }
         </style>
 </head>
   <body>
@@ -562,15 +571,14 @@
               <div class="footerZindex">
                   <footer id="footer">
                       <div>
-                          <span id="hrBetween"></span>
-                          <p id="private_police"><a class="aboutUs" style="color:#d4d4d4" href="https://gareg.ru/private.html">Политика/кофидециальность.</a></p><span id="hrBetween2"></span>
+                          <p id="private_police"><a class="aboutUs" style="color:#d4d4d4" href="https://gareg.ru/private.html">Политика/кофидециальность.</a></p>
                           <a class="aboutUs" id="thankYou" style="color:#d4d4d4" href="https://github.com/iamnotapr/pictures/blob/main/thanks.png?raw=true" target="_blank">Благодарность.</a>
                           <p id="help" style="color:#e0e0e0" class="help">Возникла проблема,<a style="color:#d4d4d4" class="aboutUs" href="https://gareg.ru/support.html">напишите нам.</a></p>
                         <!--  <a href="kvalSeller.html" style="color:#d4d4d4" class="kvalSaller aboutUs">Gare.g plus.</a>-->
                           <a href="https://gareg.ru/referal.html" style="color:#e0e0e0" class="referal aboutUs">Поддержите нас с помощью реферальной программы.</a>
                           <span class="bettwenTwo"></span>
                           <div class="alpha">
-                              <a href="" class="shop">Gare.g</a>
+                              <a href="#" class="shop">Gare.g</a>
                               <p class="internet">Интернет-магазин</p>
                               <a href="https://iamnotapr.github.io/alpha/alphasite.html" class="alpha8">Alpha</a>
                               <p class="rocket">Ракетная модель</p>
