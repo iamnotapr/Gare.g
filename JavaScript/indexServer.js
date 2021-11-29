@@ -10,7 +10,7 @@ let CATALOG =[];
 
 //http://myjson.dit.upm.es/api/bins/3qst                             //Обновлять при каждом добавлении в католог
 //server/catalog.json
-fetch('http://myjson.dit.upm.es/api/bins/3qst')                                            //Вывод каталога товаров
+fetch('https://gareg.ru/server/catalog.json')                                            //Вывод каталога товаров
     .then(res => res.json())
     .then(body => {
         CATALOG = body;
