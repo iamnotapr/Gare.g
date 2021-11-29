@@ -1,40 +1,61 @@
-/*adaptive*/
 @media screen and (max-width: 768px) {
-    .suggestions{height: 120px;width: 1510px;z-index: 999;position: absolute;top:180px;}
-    .swiper{width: 1478px;position: absolute;top:300px;}
-    .find_word{position: absolute;height: 100px;top:30px;left:150px;width: 1200px;border-radius: 18px;border:2px solid black; }
-    .select{background: none;border: none;}
-    .suggestionsWord{position: absolute;left:150px;font-size: 40px;top:-30px;}
-    .suggestionsspan{position: absolute;top:43px;height: 45px;width: 260px;border-radius: 7px;}
-    .suggestionsspan:hover{border: none;}
-    .giftcardsWord{position: absolute;left: 250px;font-size: 40px;top:-30px;width: 200px;}
-    .giftcardsSpan{position: absolute;top:43px;left:250px;height: 40px;width: 150px;}
-    .slider{position: absolute;top:20px;left:20px;width: 70px;height: 7px;}
-    .sliderShow{position: absolute;top:40px;left:20px;height: 7px;width: 70px;}
-    .sliderShowTwo{position: absolute;top:60px;left:20px;height: 7px;width: 70px;}
-    .sliderNone{position: absolute;top:13px;left:15px;width: 80px;height: 60px;border:none;z-index: 999;}
-    .thebest{position: absolute;top:700px;width: 400px;border-radius: 13px;}
-    .wordBest{position: absolute;left:20px;font-size: 50px;}
-    .popup{position: fixed;top:1200px;left:0;width: 2100px;height: 2400px;z-index: 9999;}
-    .overlay{width: 100%;height: 100%;z-index: 9997;}
-    .garegshop{height: 140px;}.book{position: absolute;top:700px;left:520px;height: 400px;width: 330px;}
-    .bookword{font-size: 48px;position: absolute;top:-20px;left: 90px;}.bookjpg{position: absolute;top:110px;left: 40px;}
-    .onBook{position: absolute;top:310px;left:70px;font-size: 30px;}
-    .foroffice{position: absolute;top:700px;left:1000px;width: 330px;height: 400px;}
-    .officejpg{position: absolute;top:110px;left:40px;}
-    .seemore{position: absolute;top:310px;left:70px;font-size: 30px;}
-    #footer{width: 1510px;position: absolute;top:3100px;height: 700px;}.header-container{position: absolute;}
-    .curcl{background: none;}
-    .cartOne{position: fixed;top:2230px;right: 70px;z-index: 999;height: 50px;width: 6px;}
-    .cartBottom{position: fixed;top:2280px;right: 80px;width: 50px;height: 6px;}
-    /*product*/
-    .product-conteiner{position: absolute;top:1300px;height: 1500px;display: grid;grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 45px;left:200px;width: 1100px;}
-    .product-element{width: 300px;height: 400px;border-radius: 12px;}
-    /*another*/
-    .backTop{position: absolute;top:2900px;height: 100px;width: 1506px;}
-    .trangle_up{background: none;color: none;position: absolute;top:180px;left:0;}
-    #trangle{background: none;color: none;}.backTopTringle{background: none;color: none;}
-    .backTopWord{position: absolute;top:2890px;font-size: 40px;left:700px;}
-    .private_police{font-size: 50px;position: absolute;}
-    }
+    .find_word{
+        font-size: 50px;
+    }.suggestions{height: 120px;width: 1510px;z-index: 999;position: absolute;top:180px;}
+.swiper{width: 1478px;position: absolute;top:300px;}
+.find_word{position: absolute;height: 100px;top:30px;left:150px;width: 1000px;border-radius: 18px;border:2px solid black; }
+.find{background: none;border:none;}
+.select{background: none;border: none;}
+.suggestionsWord{position: absolute;left:150px;font-size: 40px;top:-30px;}
+.suggestionsspan{position: absolute;top:43px;height: 45px;width: 260px;border-radius: 7px;}
+.suggestionsspan:hover{border: none;}
+.giftcardsWord{position: absolute;left: 250px;font-size: 40px;top:-30px;width: 200px;}
+.giftcardsSpan{position: absolute;top:43px;left:250px;height: 40px;width: 150px;}
+.slider{position: absolute;top:20px;left:20px;width: 70px;height: 7px;}
+.sliderShow{position: absolute;top:40px;left:20px;height: 7px;width: 70px;}
+.sliderShowTwo{position: absolute;top:60px;left:20px;height: 7px;width: 70px;}
+.sliderNone{position: absolute;top:13px;left:15px;width: 80px;height: 60px;border:none;z-index: 999;}
+.thebest{position: absolute;top:700px;width: 400px;border-radius: 13px;}
+.wordBest{position: absolute;left:20px;font-size: 50px;}
+.popup{position: fixed;top:1200px;left:0;width: 2100px;height: 2400px;z-index: 9999;}
+.overlay{width: 100%;height: 100%;z-index: 9997;}
+.garegshop{height: 140px;}.book{position: absolute;top:700px;left:520px;height: 400px;width: 330px;}
+.bookword{font-size: 48px;position: absolute;top:-20px;left: 90px;}.bookjpg{position: absolute;top:110px;left: 40px;}
+.onBook{position: absolute;top:310px;left:70px;font-size: 30px;}
+.foroffice{position: absolute;top:700px;left:1000px;width: 330px;height: 400px;}
+.officejpg{position: absolute;top:110px;left:40px;}
+.seemore{position: absolute;top:310px;left:70px;font-size: 30px;}
+#footer{width: 1510px;position: absolute;top:3200px;height: 700px;}.header-container{position: absolute;top: 30px;font-size: 60px;left:1320px}
+.curcl{background: none;position: absolute;}
+.cartOne{position: absolute;top:-510px;left: 1100px;z-index: 999;height: 67px;width: 6px;}
+.cartBottom{position: absolute;top:-450px;left: 1023px;width: 65px;height: 6px;}.cartLeft{position: absolute;top:-530px;height: 90px;width: 6px;left: 1000px;background: grey;}
+.topTwo{position: absolute;top:-530px;left:945px;height: 6px;width: 40px;}
+/*product*/
+.product-conteiner{position: absolute;top:1300px;height: 1500px;display: grid;grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+grid-gap: 45px;left:200px;width: 1100px;}
+.product-element{width: 330px;height: 450px;border-radius: 12px;}
+.img_product{width: 270px;height: 300px;}
+.price_product{font-size: 40px;}
+#btn_product{font-size: 25px;width: 280px;}
+.price_product{font-size: 36px;}.name_product{font-size: 40px;}
+/*another*/
+.backTop{position: absolute;top:3000px;height: 100px;width: 1506px;}
+.trangle_up{background: none;color: none;position: absolute;top:180px;left:0;}
+#trangle{background: none;color: none;}.backTopTringle{background: none;color: none;}
+.backTopWord{position: absolute;top:2990px;font-size: 40px;left:700px;}
+#office{font-size: 40px;position: absolute;left:50px;}
+.alpha{position: absolute;top:580px;}.shop{font-size: 45px;position: absolute;top:-2px;left:300px}
+.internet{position: absolute;font-size: 38px;left: 230px;top:10px}
+.alpha8{position: absolute;font-size:45px ;top:-2px;left:1100px;}.rocket{position: absolute;top:10px;left:1030px;font-size: 38px;}
+.inc{position: absolute;top:450px;font-size: 40px;left: 400px;}#private_police{position: absolute;top:20px;font-size: 40px;left:90px;}
+#thankYou{position: absolute;top:140px;font-size: 40px;left:90px;}#help{position: absolute;top:190px;left:90px;font-size: 40px;}
+.bettwenTwo{position: absolute;top:10px;left:730px;height: 400px;width: 5px;background: grey;}
+.referal{position: absolute;top:20px;left:850px;font-size: 40px;}.top{position: absolute;top:-510px;left:990px;width: 125px;height: 6px;}
+.sirclOne{position: absolute;top:-440px;left: 1013px;width: 30px;height: 30px;border-radius: 15px;}
+.sirclTwo{position: absolute;top:-440px;left:1070px;width: 30px;height: 30px;border-radius: 15px;}
+.shopping_cart{position: fixed;top:20px;left:20px;width: 1460px;height: 2400px;}.mailClient{position: absolute;top:50px;left:800px;width: 500px;height: 100px;font-size: 43px;border-radius: 50px;}
+.adress{position: absolute;top:230px;left:800px;width: 500px;height: 100px;font-size: 43px;border-radius: 50px;}.shopping_element_name{font-size: 50px;}
+.shopping_element_price{font-size: 50px;}.buyProduct{font-size: 50px;width: 500px;height: 70px;position: absolute;left:450px;border-radius: 30px;}
+.hideCartjs{position: absolute;top:10px;left: 1380px;height: 90px;width: 5px;}.hideCartjsTwo{position: absolute;top:10px;left:1380px;height: 90px;width: 5px;}
+.hideCartNoneJs{position: absolute;top:10px;left:1350px;height: 90px;width: 70px;background: none;}
+}
