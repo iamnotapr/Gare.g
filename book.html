@@ -2,10 +2,11 @@
 <html lang="ru">
 <head>
     <title>Gare.g</title>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <link rel="icon" type="image/png" href="https://github.com/iamnotapr/pictures/blob/main/gare.png?raw=true" />
     <link rel="stylesheet" href="styleGare/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, inital-scale=1.0">
     <style>
      .checbox{position:absolute;top:160px;height:100%;left:0;width:300px;background:white;z-index:9999;}
     .line{position:absolute;top:170px;left:304px;width:2px;height:100%;background:#cccccc;}#fantastyc{position:absolute;top:70px;left:-120px;cursor:pointer;}.fantastyc{-webkit-appearance:none;z-index:9999;}
@@ -19,7 +20,91 @@
         .wordScence:before{content:"";display:block;width:20px;height:20px;box-shadow:0 0 4px;border-radius:3px;position:absolute;top:0px;left:-30px;z-index:1;}
             .wordScence:after {content: "";display: block;width: 20px;height: 20px;opacity: 0;background: url("https://github.com/iamnotapr/Gare.g/blob/main/checkbox.png?raw=true");background-size: 20px 20px;border-radius: 3px;position: absolute;top: 0px;left: -30px;z-index: 3;}
           #scence:checked + .wordScence:before{background:none;}
-        #scence:checked + .wordScence:after{opacity:1;}
+        #scence:checked + .wordScence:after{opacity:1;}.find_word{font-size: 20px;}
+        .header-container {position: fixed;bottom: 35px;left: 1378px;width: 88px;height: 67px;background: none;z-index:7990;text-align:center;border:none;cursor:pointer;}
+        .header-counter {z-index: 99;position: absolute;top:15px;left: 50%;background:none;cursor:pointer;text-align:center;}
+        .product-conteiner{position: absolute;top:200px;left:350px;}.hide{display: none;}.shopping_cart{position:fixed;top:10px;left:25%;width:900px;height:700px;background:white;box-shadow:0 0 4px;border-radius:6px;z-index:9999;}
+        .shopping_element_name{padding:13px;font-weight:bold;}
+        .shopping_element_price {padding: 13px;color:#6e6e6e;}
+        .product-element{border:none;box-shadow: 0 0 0;}
+        .hideCartjs{position:fixed;top:19px;left:82%;width:2px;height:30px;transform:rotate(45deg);background:black;cursor:pointer;z-index:9990;}
+        .hideCartjsTwo{position:fixed;top:19px;left:82%;height:30px;width:2px;transform:rotate(-45deg);background:black;cursor:pointer;z-index:9990;}
+        .hideCartNoneJs {position: absolute;top:10px;left: 92%;background: none;width: 30px;height: 30px;z-index: 9999;cursor:pointer;}
+        .mailClient{position: fixed;top: 20px;left: 800px;border-radius: 5px;}
+        .adress{position: fixed;top:80px;left:800px;border-radius: 5px;}
+        .curcl{
+                position: fixed;top:85%;right: 28px;width: 60px;height: 60px;border-radius:30px;background: #dddddd;
+            }
+            .cartOne{position: absolute;top:23px;right: 10px;width: 2px;height: 20px;transform: rotate(25deg);background: grey;}
+            .cartBottom{position: absolute;top:41px;right:14px;width: 22px;height: 2px;background: grey;}
+            .cartLeft{position: absolute;top:16px;left:17px;width: 2px;height: 28px;background-color: grey;transform: rotate(-25deg);}
+            .top{position: absolute;top:24px;width: 38px;height: 2px;left:15px;background: grey;}
+            .topTwo{position: absolute;top:17px;left: 2px;width: 10px;height: 2px;background: grey;}
+            .sirclOne{position: absolute;top:43px;left:23px;background: grey;width: 8px;height: 8px;border-radius:4px ;}
+            .sirclTwo{position: absolute;top: 43px;left:38px;background: grey;width: 8px;height: 8px;border-radius: 4px;}
+        .between-book{position: absolute;top:530px;left:340px;width: 1050px;height: 2px;background: #cccccc;}
+        @media screen and (max-width: 768px) {
+    .find_word{
+        font-size: 50px;
+    }.suggestions{height: 120px;width: 1510px;z-index: 999;position: absolute;top:180px;}
+.swiper{width: 1478px;position: absolute;top:300px;}
+.find_word{position: absolute;height: 100px;top:30px;left:150px;width: 1000px;border-radius: 18px;border:2px solid black; }
+.find{background: none;border:none;}
+.select{background: none;border: none;}
+.suggestionsWord{position: absolute;left:150px;font-size: 40px;top:-30px;}
+.suggestionsspan{position: absolute;top:43px;height: 45px;width: 260px;border-radius: 7px;}
+.suggestionsspan:hover{border: none;}
+.giftcardsWord{position: absolute;left: 250px;font-size: 40px;top:-30px;width: 200px;}
+.giftcardsSpan{position: absolute;top:43px;left:250px;height: 40px;width: 150px;}
+.slider{position: absolute;top:20px;left:20px;width: 70px;height: 7px;}
+.sliderShow{position: absolute;top:40px;left:20px;height: 7px;width: 70px;}
+.sliderShowTwo{position: absolute;top:60px;left:20px;height: 7px;width: 70px;}
+.sliderNone{position: absolute;top:13px;left:15px;width: 80px;height: 60px;border:none;z-index: 999;}
+.thebest{position: absolute;top:700px;width: 400px;border-radius: 13px;}
+.wordBest{position: absolute;left:20px;font-size: 50px;}
+.popup{position: fixed;top:1200px;left:0;width: 2100px;height: 2400px;z-index: 9999;}
+.overlay{width: 100%;height: 100%;z-index: 9997;}
+.garegshop{height: 140px;}.book{position: absolute;top:700px;left:520px;height: 400px;width: 330px;}
+.bookword{font-size: 48px;position: absolute;top:-20px;left: 90px;}.bookjpg{position: absolute;top:110px;left: 40px;}
+.onBook{position: absolute;top:310px;left:70px;font-size: 30px;}
+.foroffice{position: absolute;top:700px;left:1000px;width: 330px;height: 400px;}
+.officejpg{position: absolute;top:110px;left:40px;}
+.seemore{position: absolute;top:310px;left:70px;font-size: 30px;}
+#footer{width: 1510px;position: absolute;top:3200px;height: 700px;}.header-container{position: absolute;top: 30px;font-size: 60px;left:1320px}
+.curcl{background: none;position: absolute;}
+.cartOne{position: absolute;top:-510px;left: 1100px;z-index: 999;height: 67px;width: 6px;}
+.cartBottom{position: absolute;top:-450px;left: 1023px;width: 65px;height: 6px;}.cartLeft{position: absolute;top:-530px;height: 90px;width: 6px;left: 1000px;background: grey;}
+.topTwo{position: absolute;top:-530px;left:945px;height: 6px;width: 40px;}
+/*product*/
+.product-conteiner{position: absolute;top:300px;height: 1500px;display: grid;grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+grid-gap: 45px;left:200px;width: 1100px;}
+.product-element{width: 330px;height: 450px;border-radius: 12px;}
+.img_product{width: 270px;height: 300px;}
+.price_product{font-size: 40px;}
+#btn_product{font-size: 25px;width: 280px;}
+.price_product{font-size: 36px;}.name_product{font-size: 40px;}
+/*another*/
+.backTop{position: absolute;top:3000px;height: 100px;width: 1506px;}
+.trangle_up{background: none;color: none;position: absolute;top:180px;left:0;}
+#trangle{background: none;color: none;}.backTopTringle{background: none;color: none;}
+.backTopWord{position: absolute;top:2990px;font-size: 40px;left:700px;}
+#office{font-size: 40px;position: absolute;left:50px;}
+.alpha{position: absolute;top:580px;}.shop{font-size: 45px;position: absolute;top:-2px;left:300px}
+.internet{position: absolute;font-size: 38px;left: 230px;top:10px}
+.alpha8{position: absolute;font-size:45px ;top:-2px;left:1100px;}.rocket{position: absolute;top:10px;left:1030px;font-size: 38px;}
+.inc{position: absolute;top:450px;font-size: 40px;left: 400px;}#private_police{position: absolute;top:20px;font-size: 40px;left:90px;}
+#thankYou{position: absolute;top:140px;font-size: 40px;left:90px;}#help{position: absolute;top:190px;left:90px;font-size: 40px;}
+.bettwenTwo{position: absolute;top:10px;left:730px;height: 400px;width: 5px;background: grey;}
+.referal{position: absolute;top:20px;left:850px;font-size: 40px;}.top{position: absolute;top:-510px;left:990px;width: 125px;height: 6px;}
+.sirclOne{position: absolute;top:-440px;left: 1013px;width: 30px;height: 30px;border-radius: 15px;}
+.sirclTwo{position: absolute;top:-440px;left:1070px;width: 30px;height: 30px;border-radius: 15px;}
+.shopping_cart{position: fixed;top:20px;left:20px;width: 1460px;height: 2400px;}.mailClient{position: absolute;top:50px;left:800px;width: 500px;height: 100px;font-size: 43px;border-radius: 50px;}
+.adress{position: absolute;top:230px;left:800px;width: 500px;height: 100px;font-size: 43px;border-radius: 50px;}.shopping_element_name{font-size: 50px;}
+.shopping_element_price{font-size: 50px;}.buyProduct{font-size: 50px;width: 500px;height: 70px;position: absolute;left:450px;border-radius: 30px;}
+.hideCartjs{position: absolute;top:10px;left: 1380px;height: 90px;width: 5px;}.hideCartjsTwo{position: absolute;top:10px;left:1380px;height: 90px;width: 5px;}
+.hideCartNoneJs{position: absolute;top:10px;left:1350px;height: 90px;width: 70px;background: none;}
+.checbox{display: none;} .line{display: none;}
+}
     </style>
 </head>
 <body>
@@ -32,7 +117,7 @@
         <!--find-->
         <div>
             <form class="find_ads" action="">
-                <input class="find_word" id="find_word" name="s" type="search">
+                <input class="find_word" id="find_word" name="s" type="search" maxlength="200">
                 <button class="find" id="find" type="sumbit"></button>
             </form>
         </div>
@@ -41,8 +126,7 @@
             <div>
                 <select class="select">
                     <option value="#">Книги</option>
-                    <option value="Gare.com.html">Всё</option>
-                    <option value="#">Подарочные карты</option>
+                    <option value="gareg.ru/Gr.html">Всё</option>
                 </select>
             </div>
         </div>
@@ -68,11 +152,73 @@
             <label class="wordScence">Наука</label>
         </div>
     </div>
+    <div>
+        <!--cart-->
+        <div id="shopping"></div>             
+        <span class="curcl">
+            <div class="cartOne"></div>
+            <div class="cartBottom"></div>
+            <div class="cartLeft"></div>
+            <div class="top"></div>
+            <div class="topTwo"></div>
+            <div class="sirclOne"></div>
+            <div class="sirclTwo"></div>
+        </span>
+    </div>
+
+    <div class="product">
+        <div id="cartHeader"></div>
+        <div id="products"></div>
+        <div class="between-book"></div>
+    </div>
+                   <!--aboutUs-->
+             
+                   <div>
+                    <div>
+                        <a href="#">
+                            <div class="backTopTringle">
+                                <span id="trangle" class="trangle_up"></span>
+                            </div>
+                            <span class="backTop"></span>
+                            <p class="backTopWord">Вверх</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="footerZindex">
+                    <footer id="footer">
+                        <div>
+                            <p id="private_police"><a class="aboutUs" style="color:#d4d4d4" href="https://gareg.ru/private.html">Политика/кофидециальность.</a></p>
+                            <a class="aboutUs" id="thankYou" style="color:#d4d4d4" href="https://github.com/iamnotapr/pictures/blob/main/thanks.png?raw=true" target="_blank">Благодарность.</a>
+                            <p id="help" style="color:#e0e0e0" class="help">Возникла проблема,<a style="color:#d4d4d4" class="aboutUs" href="https://gareg.ru/support.html">напишите нам.</a></p>
+                          <!--  <a href="kvalSeller.html" style="color:#d4d4d4" class="kvalSaller aboutUs">Gare.g plus.</a>-->
+                            <a href="https://gareg.ru/referal.html" style="color:#e0e0e0" class="referal aboutUs">Поддержите нас с помощью реферальной программы.</a>
+                            <span class="bettwenTwo"></span>
+                            <div class="alpha">
+                                <a href="#" class="shop">Gare.g</a>
+                                <p class="internet">Интернет-магазин</p>
+                                <a href="https://iamnotapr.github.io/alpha/alphasite.html" class="alpha8">Alpha</a>
+                                <p class="rocket">Ракетная модель</p>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="inc" style="color:grey">© 2021, Gare.g, Inc. или ее филиалы</p>
+                        </div>
+                    </footer>
+                </div>
+            </div>
         <script>
             document.querySelector(".select").onchange = function () {
                 location.assign(this.value);
             }
         </script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://gareg.ru/JavaScript/localstorage.js"></script>
+        <script src="https://gareg.ru/JavaScript/root.js"></script>
+       <!-- <script src="JavaScript/cart.js"></script>-->
+        <script src="https://gareg.ru//JavaScript/product.js"></script>
+        <script src="https://gareg.ru/JavaScript/shoping.js"></script>
+        <script src="https://gareg.ru/JavaScript/header.js"></script>
+        <script src="https://gareg.ru/JavaScript/indexServer.js"></script>
+        <script src="https://gareg.ru/JavaScript/liveSearch.js"></script>
 </body>
 </html>
