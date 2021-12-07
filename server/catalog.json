@@ -53,5 +53,23 @@
         "price": 45,
         "name":"Корректирующий карандаш",
         "img":"https://avatars.mds.yandex.net/get-mpic/5217690/img_id5820140095820962604.jpeg/orig"
+    },
+    {
+        "id":"10",
+        "price":110,
+        "name":"Pentel correction tape",
+        "img":"https://3.allegroimg.com/original/018918/c2b4b9464906bd8ce59be41dbff3/PENTEL-Korektor-w-tasmie-boczny-42-mm-x-10-m"
+    },
+    {
+        "id":"11",
+        "price":120,
+        "name":"Стержни для автоматических карандашей",
+        "img":"https://edim-chr.ru/upload/iblock/60f/60f9c3b2e971a76542d339d0490105e5.jpg"
+    },
+    {
+        "id":"12",
+        "price":290,
+        "name":"Автоматические карандаши",
+        "img":"https://alfanit.ru/upload/iblock/13f/13faf9283d438204afa41b32670cbc8b.jpg"
     }
 ]
