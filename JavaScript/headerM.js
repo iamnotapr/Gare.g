@@ -27,16 +27,6 @@ headerM += `<header class="header">
 </div>
 
 
-<!--best-->
-<a href="#">
-<div class="thebest">
-    <div class="best">
-        <h1 class="wordBest">Бестселлер в мире финансов</h1>
-    </div>
-</div>
-</a>
-
-
            <!--cartShopping-->
 <div>
   <div id="shopping"></div>             
