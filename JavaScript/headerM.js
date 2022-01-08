@@ -65,11 +65,11 @@ headerM += `<header class="header">
               <span class="garegshop"></span>
               <h1 class="h1" id="shopWord">Gare.g</h1>
             </div>
-            <a href="#">
-              <span class="partner-span"></span>
-              <p class="partner">Хотите стать поставщиком?</p>
-            </a>
-            <a href="https://gareg.ru/support.html"с class="supportSwi">Помощь</a>
+            <a href="#" class="main-span">Главная</a>
+            <a href="#" class="partner-span">Книги</a>
+            <div class="support-div">
+                <a href="https://gareg.ru/support.html"с class="supportSwi">Помощь</a>
+            </div>
             <div class="close-popup js-close-campaign"></div>
             <div class="hideSlider js-close-campaign"></div>
         </div>
