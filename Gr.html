@@ -2,14 +2,14 @@
 <html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, inital-scale=1">
+    <meta name="viewport" content="width=device-width, inital-scale=1.0">
     <meta name="description" content="Хороший день для чтения.">
     <title>Gare.g</title>
     <link rel="icon" type="image/png" href="https://github.com/iamnotapr/pictures/blob/main/gare.png?raw=true" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://gareg.ru/styleGare/style.css"/>
-    <link rel="stylesheet" href="https://gareg.ru/styleGare/adaptive.css"/>
+    <link rel="stylesheet" href="htmlG/styleGare/adaptive.css"/>
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <style>
@@ -349,166 +349,86 @@
         .wordBlackF{position:absolute;top:-50px;left:30%;color:black;}*/
         .find_word{
             font-size: 20px;
-        }
+        }.partner{position: absolute;top:85px;left:50px;color: black;font-size: 20px;z-index: 999;}
+        .partner-span{position: absolute;top:70px;left:0;height: 60px;width: 100%;background: none;}
         @media screen and (max-width: 768px) {
-            .find_word{
-                font-size: 50px;
-            }.suggestions{height: 120px;width: 1510px;z-index: 999;position: absolute;top:180px;}
-    .swiper{width: 1478px;position: absolute;top:300px;}
-    .find_word{position: absolute;height: 100px;top:30px;left:150px;width: 1000px;border-radius: 18px;border:2px solid black; }
-    .find{background: none;border:none;}
-    .select{background: none;border: none;}
-    .suggestionsWord{position: absolute;left:150px;font-size: 40px;top:-30px;}
-    .suggestionsspan{position: absolute;top:43px;height: 45px;width: 260px;border-radius: 7px;}
-    .suggestionsspan:hover{border: none;}
-    .giftcardsWord{position: absolute;left: 250px;font-size: 40px;top:-30px;width: 200px;}
-    .giftcardsSpan{position: absolute;top:43px;left:250px;height: 40px;width: 150px;}
-    .slider{position: absolute;top:20px;left:20px;width: 70px;height: 7px;}
-    .sliderShow{position: absolute;top:40px;left:20px;height: 7px;width: 70px;}
-    .sliderShowTwo{position: absolute;top:60px;left:20px;height: 7px;width: 70px;}
-    .sliderNone{position: absolute;top:13px;left:15px;width: 80px;height: 60px;border:none;z-index: 999;}
-    .thebest{position: absolute;top:700px;width: 400px;border-radius: 13px;}
-    .wordBest{position: absolute;left:20px;font-size: 50px;}
-    .popup{position: fixed;top:1200px;left:0;width: 2100px;height: 2400px;z-index: 9999;}
-    .overlay{width: 100%;height: 100%;z-index: 9997;}
-    .garegshop{height: 140px;}.book{position: absolute;top:700px;left:520px;height: 400px;width: 330px;}
-    .bookword{font-size: 48px;position: absolute;top:-20px;left: 90px;}.bookjpg{position: absolute;top:110px;left: 40px;}
-    .onBook{position: absolute;top:310px;left:70px;font-size: 30px;}
-    .foroffice{position: absolute;top:700px;left:1000px;width: 330px;height: 400px;}
-    .officejpg{position: absolute;top:110px;left:40px;}
-    .seemore{position: absolute;top:310px;left:70px;font-size: 30px;}
-    #footer{width: 1510px;position: absolute;top:3200px;height: 700px;}.header-container{position: absolute;top: 30px;font-size: 60px;left:1320px}
-    .curcl{background: none;position: absolute;}
-    .cartOne{position: absolute;top:-510px;left: 1100px;z-index: 999;height: 67px;width: 6px;}
-    .cartBottom{position: absolute;top:-450px;left: 1023px;width: 65px;height: 6px;}.cartLeft{position: absolute;top:-530px;height: 90px;width: 6px;left: 1000px;background: grey;}
-    .topTwo{position: absolute;top:-530px;left:945px;height: 6px;width: 40px;}
-    /*product*/
-    .product-conteiner{position: absolute;top:1300px;height: 1500px;display: grid;grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 45px;left:200px;width: 1100px;}
-    .product-element{width: 330px;height: 450px;border-radius: 12px;}
-    .img_product{width: 270px;height: 300px;}
-    .price_product{font-size: 40px;}
-    #btn_product{font-size: 25px;width: 280px;}
-    .price_product{font-size: 36px;}.name_product{font-size: 40px;}
-    /*another*/
-    .backTop{position: absolute;top:3000px;height: 100px;width: 1506px;}
-    .trangle_up{background: none;color: none;position: absolute;top:180px;left:0;}
-    #trangle{background: none;color: none;}.backTopTringle{background: none;color: none;}
-    .backTopWord{position: absolute;top:2990px;font-size: 40px;left:700px;}
-    #office{font-size: 40px;position: absolute;left:50px;}
-    .alpha{position: absolute;top:580px;}.shop{font-size: 45px;position: absolute;top:-2px;left:300px}
-    .internet{position: absolute;font-size: 38px;left: 230px;top:10px}
-    .alpha8{position: absolute;font-size:45px ;top:-2px;left:1100px;}.rocket{position: absolute;top:10px;left:1030px;font-size: 38px;}
-    .inc{position: absolute;top:450px;font-size: 40px;left: 400px;}#private_police{position: absolute;top:20px;font-size: 40px;left:90px;}
-    #thankYou{position: absolute;top:140px;font-size: 40px;left:90px;}#help{position: absolute;top:190px;left:90px;font-size: 40px;}
-    .bettwenTwo{position: absolute;top:10px;left:730px;height: 400px;width: 5px;background: grey;}
-    .referal{position: absolute;top:20px;left:850px;font-size: 40px;}.top{position: absolute;top:-510px;left:990px;width: 125px;height: 6px;}
-    .sirclOne{position: absolute;top:-440px;left: 1013px;width: 30px;height: 30px;border-radius: 15px;}
-    .sirclTwo{position: absolute;top:-440px;left:1070px;width: 30px;height: 30px;border-radius: 15px;}
-    .shopping_cart{position: fixed;top:20px;left:20px;width: 1460px;height: 2400px;}.mailClient{position: absolute;top:50px;left:800px;width: 500px;height: 100px;font-size: 43px;border-radius: 50px;}
-    .adress{position: absolute;top:230px;left:800px;width: 500px;height: 100px;font-size: 43px;border-radius: 50px;}.shopping_element_name{font-size: 50px;}
-    .shopping_element_price{font-size: 50px;}.buyProduct{font-size: 50px;width: 500px;height: 70px;position: absolute;left:450px;border-radius: 30px;}
-    .hideCartjs{position: absolute;top:10px;left: 1380px;height: 90px;width: 5px;}.hideCartjsTwo{position: absolute;top:10px;left:1380px;height: 90px;width: 5px;}
-    .hideCartNoneJs{position: absolute;top:10px;left:1350px;height: 90px;width: 70px;background: none;}
-    }
+    .find_word{
+        font-size: 50px;
+    }.suggestions{height: 120px;width: 1510px;z-index: 999;position: absolute;top:180px;}
+.swiper{width: 1478px;position: absolute;top:300px;}
+.find_word{position: absolute;height: 100px;top:30px;left:150px;width: 1000px;border-radius: 18px;border:2px solid black; }
+.find{background: none;border:none;}
+.select{background: none;border: none;}
+.suggestionsWord{position: absolute;left:150px;font-size: 40px;top:-30px;}
+.suggestionsspan{position: absolute;top:43px;height: 45px;width: 260px;border-radius: 7px;}
+.suggestionsspan:hover{border: none;}
+.giftcardsWord{position: absolute;left: 250px;font-size: 40px;top:-30px;width: 200px;}
+.giftcardsSpan{position: absolute;top:43px;left:250px;height: 40px;width: 150px;}
+.slider{position: absolute;top:20px;left:20px;width: 70px;height: 7px;}
+.sliderShow{position: absolute;top:40px;left:20px;height: 7px;width: 70px;}
+.sliderShowTwo{position: absolute;top:60px;left:20px;height: 7px;width: 70px;}
+.sliderNone{position: absolute;top:13px;left:15px;width: 80px;height: 60px;border:none;z-index: 999;}
+.thebest{position: absolute;top:700px;width: 400px;border-radius: 13px;}
+.wordBest{position: absolute;left:20px;font-size: 50px;}
+.popup{position: fixed;top:1400px;left:0;width: 2100px;height: 2900px;z-index: 9999;}
+.overlay{width: 100%;height: 100%;z-index: 9997;}
+.garegshop{height: 140px;}.book{position: absolute;top:700px;left:520px;height: 400px;width: 330px;}
+.bookword{font-size: 48px;position: absolute;top:-20px;left: 90px;}.bookjpg{position: absolute;top:110px;left: 40px;}
+.onBook{position: absolute;top:310px;left:70px;font-size: 30px;}
+.foroffice{position: absolute;top:700px;left:1000px;width: 330px;height: 400px;}
+.officejpg{position: absolute;top:110px;left:40px;}
+.seemore{position: absolute;top:310px;left:70px;font-size: 30px;}
+#footer{width: 1510px;position: absolute;top:3200px;height: 700px;}.header-container{position: absolute;top: 30px;font-size: 60px;left:1320px}
+.curcl{background: none;position: absolute;}
+.cartOne{position: absolute;top:-510px;left: 1100px;z-index: 999;height: 67px;width: 6px;}
+.cartBottom{position: absolute;top:-450px;left: 1023px;width: 65px;height: 6px;}.cartLeft{position: absolute;top:-530px;height: 90px;width: 6px;left: 1000px;background: grey;}
+.topTwo{position: absolute;top:-530px;left:945px;height: 6px;width: 40px;}
+/*product*/
+.product-conteiner{position: absolute;top:1300px;height: 1500px;display: grid;grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+grid-gap: 45px;left:200px;width: 1100px;}
+.product-element{width: 330px;height: 450px;border-radius: 12px;}
+.img_product{width: 270px;height: 300px;}
+.price_product{font-size: 40px;}
+#btn_product{font-size: 25px;width: 280px;}
+.price_product{font-size: 36px;}.name_product{font-size: 40px;}
+/*another*/
+.backTop{position: absolute;top:3000px;height: 100px;width: 1506px;}
+.trangle_up{background: none;color: none;position: absolute;top:180px;left:0;}
+#trangle{background: none;color: none;}.backTopTringle{background: none;color: none;}
+.backTopWord{position: absolute;top:2990px;font-size: 40px;left:700px;}
+#office{font-size: 40px;position: absolute;left:50px;}
+.alpha{position: absolute;top:580px;}.shop{font-size: 45px;position: absolute;top:-2px;left:300px}
+.internet{position: absolute;font-size: 38px;left: 230px;top:10px}
+.alpha8{position: absolute;font-size:45px ;top:-2px;left:1100px;}.rocket{position: absolute;top:10px;left:1030px;font-size: 38px;}
+.inc{position: absolute;top:450px;font-size: 40px;left: 400px;}#private_police{position: absolute;top:20px;font-size: 40px;left:90px;}
+#thankYou{position: absolute;top:140px;font-size: 40px;left:90px;}#help{position: absolute;top:190px;left:90px;font-size: 40px;}
+.bettwenTwo{position: absolute;top:10px;left:730px;height: 400px;width: 5px;background: grey;}
+.referal{position: absolute;top:20px;left:850px;font-size: 40px;}.top{position: absolute;top:-510px;left:990px;width: 125px;height: 6px;}
+.sirclOne{position: absolute;top:-440px;left: 1013px;width: 30px;height: 30px;border-radius: 15px;}
+.sirclTwo{position: absolute;top:-440px;left:1070px;width: 30px;height: 30px;border-radius: 15px;}
+.shopping_cart{position: fixed;top:20px;left:20px;width: 1460px;height: 2400px;}.mailClient{position: absolute;top:50px;left:800px;width: 500px;height: 100px;font-size: 43px;border-radius: 50px;}
+.adress{position: absolute;top:230px;left:800px;width: 500px;height: 100px;font-size: 43px;border-radius: 50px;}.shopping_element_name{font-size: 50px;}
+.shopping_element_price{font-size: 50px;}.buyProduct{font-size: 50px;width: 500px;height: 70px;position: absolute;left:450px;border-radius: 30px;}
+.hideCartjs{position: absolute;top:10px;left: 1380px;height: 90px;width: 5px;}.hideCartjsTwo{position: absolute;top:10px;left:1380px;height: 90px;width: 5px;}
+.hideCartNoneJs{position: absolute;top:10px;left:1350px;height: 90px;width: 70px;background: none;}
+.garegshop h1{position: fixed;top:10%;left:29%;font-size: 40px;color: red;z-index: 9999;display: block;}
+}
+.oneD{position: absolute;top:50px;left:850px;color: white;}
         </style>
 </head>
   <body>
-      <div>
-          <div>
-              <header class="header">
-                  <a href="#">
-                      <span class="garehtml"></span>
-                  </a>
-                  <h2><img src="https://github.com/iamnotapr/pictures/blob/main/gg.jpg?raw=true" width="60px" height="40px"/>Gare.g</h2>
+        
+    <div id="headerMain"></div>
 
-                  <!--find-->
-                  <div>
-                      <form class="find_ads" action="">
-                          <input class="find_word" id="find_word" name="s" type="search">
-                          <button class="find" id="find" type="sumbit"></button>
-                      </form>
-                  </div>
-                  <!--<textarea class="int" placeholder="add" rows="2"></textarea>-->
-                  <!--select-->
-                  <div>
-                      <div>
-                          <select class="select">
-                              <option value="#" >Все</option>
-                              <option value="https://gareg.ru/book.html" >Книги</option>
-                              <option value="giftCard.html" >Подарочные карты</option>
-                          </select>
-                      </div>
-                  </div>
-                  <div>
-                  </div>
-
-
-                  <!--best-->
-                <a href="#">
-                  <div class="thebest">
-                      <div class="best">
-                          <h1 class="wordBest">Бестселлер в мире финансов</h1>
-                      </div>
-                  </div>
-                </a>
-
-
-                             <!--cartShopping-->
-                <div>
-                    <div id="shopping"></div>             
-                    <span class="curcl">
-                        <div class="cartOne"></div>
-                        <div class="cartBottom"></div>
-                        <div class="cartLeft"></div>
-                        <div class="top"></div>
-                        <div class="topTwo"></div>
-                        <div class="sirclOne"></div>
-                        <div class="sirclTwo"></div>
-                    </span>
+    <div class="nav-best-book">
+        <a href="#">
+            <div class="thebest">
+                <div class="best">
+                    <h1 class="wordBest">Бестселлер в мире финансов</h1>
                 </div>
-
-                                    <!--sugesstions-->
-
-                  <div class="suggestions">
-                      <a href="#" class="suggestionsWord">
-                          <span class="suggestionsspan"></span>
-                          <p>Предложения</p>
-                      </a>
-                      <a href="#" class="giftcards">
-                          <span class="giftcardsSpan"></span>
-                          <p class="giftcardsWord">Подарочные карты</p>
-                      </a>
-                   <!--   <main> -->
-                          <div class="js-button-campaign"><span class="slider"></span>
-                          <span class="sliderShow"></span>
-                          <span class="sliderShowTwo"></span>
-                          <span class="sliderNone"></span>
-                          </div>
-                 <!--    </main> -->
-                      <div class="overlay js-overlay-campaign">
-                          <div class="popup js-popup-campaign">
-                              <span class="garegshop"></span>
-                              <h1 class="h1">Gare.g</h1>
-                              <a href="https://gareg.ru/support.html"с class="supportSwi">Помощь</a>
-                              <div class="close-popup js-close-campaign"></div>
-                              <div class="hideSlider js-close-campaign"></div>
-                          </div>
-                      </div>
-                    <!--  <a href="kvalSeller.html" class="plusword">
-                          <span class="plusSpan"></span>
-                          <p>Gare.g plus</p>
-                      </a>
-                  </div>
-                  <a href="kvalSeller.html">
-                      <div class="plusmain">
-                          <img src="https://github.com/iamnotapr/pictures/blob/main/plus.png?raw=true" id="plusmain" />
-                      </div>
-                  </a>-->
-                  <div class="accauntDiv">
-                </div>
-              </header>
-          </div>
+            </div>
+          </a>
+    </div>
 
   <!-- Slider main container -->
 <div class="swiper">
@@ -585,6 +505,7 @@
                           <p id="help" style="color:#e0e0e0" class="help">Возникла проблема,<a style="color:#d4d4d4" class="aboutUs" href="https://gareg.ru/support.html">напишите нам.</a></p>
                         <!--  <a href="kvalSeller.html" style="color:#d4d4d4" class="kvalSaller aboutUs">Gare.g plus.</a>-->
                           <a href="https://gareg.ru/referal.html" style="color:#e0e0e0" class="referal aboutUs">Поддержите нас с помощью реферальной программы.</a>
+                          <a href="https://yoomoney.ru/quickpay/button-widget?targets=%D0%9D%D0%B0%20%D0%BA%D0%BE%D1%84%D0%B5%20Gare&default-sum=70&button-text=12&yoomoney-payment-type=on&button-size=m&button-color=black&successURL=gareg.ru%2FGr.html&quickpay=small&account=4100115825522026&" class="oneD">Пожертвуйте 1$ на кофе Gare.</a>
                           <span class="bettwenTwo"></span>
                           <div class="alpha">
                               <a href="#" class="shop">Gare.g</a>
@@ -604,6 +525,7 @@
         <img class="egg" src="https://github.com/iamnotapr/pictures/blob/main/falcon.png?raw=true" title="Через терни к звёздам">
       </div>
       <div>
+        <script src="http://gareg.ru/JavaScript/headerM.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
           <script src="https://gareg.ru/JavaScript/hdg.js"></script>
           <!--catalog-->
