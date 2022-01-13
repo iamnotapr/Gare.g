@@ -19,7 +19,7 @@
 .btn_shop_active .shopMenu_show {position: absolute;top: 98px;transform: rotate(-45deg);background: black;height: 4px;}::-webkit-scrollbar {width: 10px;}
 ::-webkit-scrollbar-track {background: #eeeeee;}::-webkit-scrollbar-thumb {background: #444444;border-radius: 25px;}
 .shadow {position: fixed;bottom: 0;left: 0;width: 100%;height: 78px;background: -moz-linear-gradient(top, rgba(99,99,99,0.65) 0%, rgba(99,99,99,0.33) 49%, rgba(99,99,99,0) 100%);background: -webkit-linear-gradient(top, rgba(99,99,99,0.65) 0%,rgba(99,99,99,0.33) 49%,rgba(99,99,99,0) 100%);background: linear-gradient(to bottom, rgba(99,99,99,0.65) 0%,rgba(99,99,99,0.33) 49%,rgba(99,99,99,0) 100%);filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6636363', endColorstr='#00636363',GradientType=0 );transform: rotate(180deg);}
-.suggestions {position: absolute;top: 120px;left: 0;width: 100%;height: 40px;background: #778899;}.suggestionsWord {position: absolute;left: 60px;top: -6px;color: white;}
+.suggestions {position: absolute;top: 90px;left: 0;width: 100%;height: 40px;background: #778899;}.suggestionsWord {position: absolute;left: 60px;top: -6px;color: white;}
 .plusSpan {position: absolute;top: 13px;left: -14px;width: 100px;height: 23px;border-radius: 2px;}.plusSpan:hover {border: 1px solid white;}
 .plusword {position: absolute;top: -6px;left: 376px;color: white;}
 
@@ -412,6 +412,7 @@ grid-gap: 45px;left:200px;width: 1100px;}
 .garegshop h1{position: fixed;top:10%;left:29%;font-size: 40px;color: red;z-index: 9999;display: block;}
 }
 .oneD{position: absolute;top:50px;left:850px;color: white;}
+#product{position: absolute;top:1000px;left:0;background: none;width: 20px;height: 20px;}
         </style>
 </head>
   <body>
@@ -434,7 +435,7 @@ grid-gap: 45px;left:200px;width: 1100px;}
   <div class="swiper-wrapper">
     <!-- Slides -->
     <div class="swiper-slide"><a href="#toys"><img class="swiper-slide" src="https://github.com/iamnotapr/pictures/blob/main/swiper1.png?raw=true"></a></div>
-    <div class="swiper-slide"><a href="https://gareg.ru/book.html"><img class="swiper-slide2" src="https://github.com/iamnotapr/pictures/blob/main/book.png?raw=true"></a></div>
+    <div class="swiper-slide"><a href="https://gareg.ru/book.html"><img class="swiper-slide2" src="https://gareg.ru/giftCard/Web_Photo_Editor.jpg"></a></div>
   </div>
 
   <div class="swiper-button-prev"></div>
@@ -449,28 +450,32 @@ grid-gap: 45px;left:200px;width: 1100px;}
           </div>
       </a>-->
           <!--books-->
-          <div class="book">
-              <p class="bookword">Книги</p>
-              <a href="https://gareg.ru/book.html">
-                  <img class="bookjpg" src="https://www.ukazka.ru/img/g/uk472858.jpg">
-                  <p class="onBook aboutUs">Увидеть больше</p>
-              </a>
-          </div>
-          <div class="foroffice">
-              <p id="office">Для офиса</p>
-              <a href="#forOffice">
-                  <img src="https://www.officekanc.ru/images/product/82439.jpg" class="officejpg" />
-                  <p class="seemore aboutUs">Увидеть больше</p>
-              </a>
-          </div>
-          <div>
-              <!--product-->
-
-              <div id="toys"></div>
-              <div id="forOffice"></div>
-
-              <div id="cartHeader"></div>
-              <div id="products"></div>
+          <nav>
+            <div class="book">
+                <p class="bookword">Книги</p>
+                <a href="https://gareg.ru/book.html">
+                    <img class="bookjpg" src="https://www.ukazka.ru/img/g/uk472858.jpg">
+                    <p class="onBook aboutUs">Увидеть больше</p>
+                </a>
+            </div>
+            <div class="foroffice">
+                <p id="office">Для офиса</p>
+                <a href="#forOffice">
+                    <img src="https://www.officekanc.ru/images/product/82439.jpg" class="officejpg" />
+                    <p class="seemore aboutUs">Увидеть больше</p>
+                </a>
+            </div>
+            <div>
+                <!--product-->
+  
+                <div id="toys"></div>
+                <div id="forOffice"></div>
+  
+                <div id="cartHeader"></div>
+                <div id="products"></div>
+                <div id="product"></div>
+          </nav>
+          
 
 
               <!--esspesial-->
