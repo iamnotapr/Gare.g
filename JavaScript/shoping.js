@@ -13,7 +13,7 @@ class Shopping {
             if (productsStore.indexOf(id) !== -1) {
                 htmlCatalog += `
                     <tr>
-                        <td class="shopping_element_name" name="elementName">${name}</td>
+                        <td class="shopping_element_name" name="${id}">${name}</td>
                         <td class="shopping_element_price">${price} ₽</td>
                     </tr>
                 `;
