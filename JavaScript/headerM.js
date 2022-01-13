@@ -7,7 +7,7 @@ headerM += `<header class="header">
 
 <!--find-->
 <div>
-    <form class="find_ads" action="">
+    <form class="find_ads" action="" method="post">
         <input class="find_word" id="find_word" name="s" type="search" maxlength="200">
         <a href="#product">    
             <button class="find" id="find" type="button"></button>
