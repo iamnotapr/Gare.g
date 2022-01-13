@@ -9,7 +9,9 @@ headerM += `<header class="header">
 <div>
     <form class="find_ads" action="">
         <input class="find_word" id="find_word" name="s" type="search" maxlength="200">
-        <button class="find" id="find" type="sumbit"></button>
+        <a href="#product">    
+            <button class="find" id="find" type="button"></button>
+        </a>
     </form>
 </div>
 <!--<textarea class="int" placeholder="add" rows="2" style=" resize: vertical;"></textarea>-->
