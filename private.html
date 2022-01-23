@@ -6,15 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <link rel="icon" type="image/png" href="https://github.com/iamnotapr/pictures/blob/main/gare.png?raw=true" />
+    <link rel="stylesheet" href="https://gareg.ru/styleGare/style.css"/>
     <title>Private Notice</title>
     <style>
-        body{background: white;}.privaceNotice{position: absolute;top:160px;left:50px;font-size:27px;}.moreinformateon{position: absolute;top:70px;left:50px;font-size: 26px;}
-        #ul-information{display: grid;grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));grid-gap: 45px;}#ul-information{position: absolute;top:250px;left:30px;}#ul-information span{font-size: 18px;}
-        #ul-information p{width:500px;}.hide{display:none;}#searc-inform{position: absolute;top:130px;left:50px;width: 500px;height: 24px;border-radius: 3px;border: 1px solid grey;font-size: 17px;box-shadow: 0 1px 2px rgb(15 17 17 / 15%) inset;}.hrNotice{width:505px ;height: 1px;position: absolute;top:230px;left:50px;background: #d6d6d6;border: none;}
-        .footer-div{position: absolute;top:1400px;left:50px;width: 500px;border-top: 1px solid black;height: 90px;}.text-footer{position: absolute;top:30px;left:100px;color: #746e6e;font-size: 14px;}
+        body{background: white;}.privaceNotice{position: absolute;top:160px;left:250px;font-size:27px;}.moreinformateon{position: absolute;top:70px;left:250px;font-size: 26px;}
+        #ul-information{display: grid;grid-template-columns: repeat(auto-fit, minmax(950px, 1fr));grid-gap: 25px;;}#ul-information{position: absolute;top:250px;left:230px;}#ul-information span{font-size: 18px;}
+        #ul-information p{width:500px;}.hide{display:none;}#searc-inform{position: absolute;top:130px;left:250px;width: 500px;height: 24px;border-radius: 3px;border: 1px solid grey;font-size: 17px;box-shadow: 0 1px 2px rgb(15 17 17 / 15%) inset;}.hrNotice{width:505px ;height: 1px;position: absolute;top:230px;left:250px;background: #d6d6d6;border: none;}
+        .footer-div{position: absolute;top:1500px;left:50px;width: 500px;border-top: 1px solid black;height: 90px;}.text-footer{position: absolute;top:30px;left:100px;color: #746e6e;font-size: 14px;}
         .header-divjs{position: fixed;top:0;width: 100%;height: 70px;background-color: white;border-bottom: 1px solid black;left: 0;z-index: 99;}
         .logo-gare{position: fixed;top:10px;left:10px;width: 100px;height: 50px;border-radius: 2px;}
         .logo-gare a{font-size: 30px;color: black;text-decoration: none;position: absolute;left: 7px;top:5px}.logo-gare:hover{border:1px solid black;cursor: pointer;}
+        /*#footerJs{position: absolute;top:-800px;left:0;}.help-inform{position: absolute;top:1400px;left:70px;width: 300px;height: 100px;box-shadow: 0 0 2px;border-radius: 5px;}*/
+        /**/
+        .div-find-it{position: absolute;top:100px;left:20px;width: 200px;height:200px;border-radius: 3px;border:1px solid rgb(194, 194, 194);}
+        .div-payment{position: absolute;top:10px;left:10px;}.div-payment:hover{color: tomato;text-decoration: underline;}
+        .link-payment:hover{color: tomato;}.using-kids-gare{position: absolute;top:60px;left:10px;}.using-kids-gare:hover{text-decoration: underline;color: tomato;}
+        .hellp-information-div{position: absolute;top:2050px;left:250px;border:1px solid rgb(194, 194, 194);width: 350px;height: 100px;border-radius: 8px;}
+        .help-informp{position: absolute;top:0px;left:20px}.yes-button{background-color: white;position: absolute;top:60px;left:50px;width: 50px;height: 30px;border:1px solid grey;cursor: pointer;}
+        .yes-button:hover{background-color: rgb(250, 250, 250);}.no-button{position: absolute;top:60px;left: 120px;width: 50px;height: 30px;border:1px solid grey;background-color: white;cursor: pointer;}
+        .no-button:hover{background-color: rgb(250, 250, 250);}.description{display: none;}.active{display: block;}
+        .oneD{position: absolute;top:25px;left: 850px;color: white;}
  </style>
 </head>
 <body>
@@ -33,6 +44,10 @@
         <div class="text-information">
             <p class="privaceNotice">Политика/конфидециальность</p>
             <hr class="hrNotice">
+        </div>
+        <div class="div-find-it">
+            <div class="div-payment"><a href="#pay-link" style="color: black;" class="link-payment">Оплата/платёжная информация.</a></div>
+            <a href="#kids-use" class="using-kids-gare">Пользование сервисом Gare.g детьмии</a>
         </div>
         <div class="private-text">
             <ul id="ul-information" class="ul-information">
@@ -54,7 +69,7 @@
                     Предотвращение мошенничества и кредитные риски. Мы используем личную информацию для предотвращения и выявления мошенничества и злоупотреблений в целях защиты безопасности наших клиентов, Планеты и других лиц. Мы также можем использовать методы скоринга для оценки кредитных рисков и управления ими.</p>
                 </li>
                 <li>
-                    <span class="aboutPersonalInf">Делится Ли Gare.g Вашей Личной Информацией?</span>
+                    <span class="aboutPersonalInf" id="kids-use">Делится Ли Gare.g Вашей Личной Информацией?</span>
                     <p>Информация о наших клиентах является важной частью нашего бизнеса, и мы не занимаемся продажей личной информации наших клиентов другим лицам.
                         Мы передаем личную информацию клиентов только так, как описано ниже, и дочерним компаниям Gare.g , Inc. контролирует, которые либо подпадают под действие настоящего
                         Уведомления о конфиденциальности, либо следуют методам, по крайней мере, таким же защитным, как те, которые описаны в этом Уведомлении о конфиденциальности.
@@ -62,14 +77,56 @@
                         поставщики услуг имеют доступ к личной информации, необходимой для выполнения своих функций, но не могут использовать ее для других целей.
                         Защита Gare.g и других: Мы разглашаем учетную запись и другую личную информацию, когда считаем, что разглашение соответствует требованиям закона.</p>
                 </li>
+                <li>
+                    <span class="aboutPersonalInf">Разрешено ли детям пользоваться услугами Gare.g?</span>
+                    <p>
+                        Gare.g не продает товары для покупки детьми. Мы продаем детские товары для покупки взрослыми. Если вам еще не исполнилось 18 лет, вы можете пользоваться услугами Gare.g только с участием родителя или опекуна. Мы сознательно не собираем личную информацию от детей в возрасте до 13 лет без согласия родителей или опекунов ребенка.
+                    </p>
+                </li>
+                <li>
+                    <span class="aboutPersonalInf" id="pay-link">В результате этих действий вы можете<br> предоставить нам такую информацию, как:</span>
+                    <ul>
+                        <li>Идентифицирующая информация, такая как ваше имя, <br>адрес и номера телефонов;</li>
+                        <li>твой возраст;</li>
+                        <li>платежная информация</li>
+                        <li>информация о вашем местоположении;</li>
+                        <li>люди, адреса и номера телефонов, указанные в ваших адресах;</li>
+                        <li>корпоративная и финансовая информация;</li>
+                    </ul>
+                </li>
+                <li>
+                    <span class="aboutPersonalInf">Платёжная информация</span>
+                    <p>Платежи проводятся через сервис <a href="https://yoomoney.ru/">ЮMoney</a>, данный сервис, предоставляет услуги по оплате наших продуктов и услуг, а так-же продукции наших партнёров.</p>
+                </li>
+                <li>
+                    <span class="aboutPersonalInf">Информация, К Которой Вы Можете Получить Доступ</span>
+                    <ul>
+                        <li>личная информация (включая имя, адрес<br> электронной почты, пароль и адресную книгу);</li>
+                        <li>настройки уведомлений по<br> электронной почте (включая Оповещения о <br>наличии товара, Доставку, Напоминания по особым случаям и <br>информационные бюллетени);</li>
+                    </ul>
+                </li>
             </ul>
         </div>
     </nav>
-    <div class="footer-div">
+    <!--<div class="footer-div">
         <div class="text-footer">© 2022, Gare.g, Inc. или ее филиалы</div>
+    </div>-->
+    <div class="hellp-information-div">
+        <div class="form-divinformation">
+            <div class="help-inform">
+                <p class="help-informp">Эта информация помогла вам?</p>
+                <button class="yes-button js-yes-btn">Да</button>
+                <button class="no-button js-yes-btn">Нет</button>
+            </div>
+            <div class="thanks-for-helpful description">
+                <p class="help-informp">Спасибо вам за ваш отзыв.</p>
+            </div>
+        </div>
     </div>
+    <div id="footerJs"></div>
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="javaScript/footer-js.js"></script>
     <script>
         //live search **Private Notice**
 window.onload = () => {
@@ -90,6 +147,14 @@ window.onload = () => {
 			  });
 	};
 };
+//
+$('.js-yes-btn').click(function() { 			//popup main
+	
+	$('.thanks-for-helpful').fadeIn();
+	$('.thanks-for-helpful').addClass('active');
+    $('.help-inform').fadeIn();
+    $('.help-inform').addClass('description');
+});
     </script>
 </body>
 </html>
