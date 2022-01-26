@@ -1,5 +1,31 @@
 let headerM ='';
 headerM += `<header class="header">
+<div class="div-button-location-div js-btn-location">
+        <a class="div-button-location">Местоположение</a>
+    </div>
+    <div class="div-popup-hide js-popup-location">
+        <div class="overlay-location"></div>
+        <div class="popup-form">
+            <div class="span-location">
+                
+                <div class="location-word">Напишите свой город</div>
+            </div>
+            <div class="input-div-location">
+                <input placeholder="Напишите город..." name="city" class="input-1">
+                <input placeholder="Область..." name="city-input" class="input-2">
+                <select class="select-location" name="select">
+                    <option>Армения</option>
+                    <option>Казахстан</option>
+                    <option>Российская Федирация</option>
+                    <option>США</option>
+                </select>
+                <button type="submit" class="button-location js-close-location">Готово</button>
+            </div>
+        </div>
+    </div>
+    <div class="seller-div-link">
+        <a href="#" class="seller-link-div">Стать поставщиком</a>
+    </div>
 <a href="#">
     <span class="garehtml"></span>
 </a>
@@ -76,16 +102,6 @@ headerM += `<header class="header">
             <div class="hideSlider js-close-campaign"></div>
         </div>
     </div>
-  <!--  <a href="kvalSeller.html" class="plusword">
-        <span class="plusSpan"></span>
-        <p>Gare.g plus</p>
-    </a>
-</div>
-<a href="kvalSeller.html">
-    <div class="plusmain">
-        <img src="https://github.com/iamnotapr/pictures/blob/main/plus.png?raw=true" id="plusmain" />
-    </div>
-</a>-->
 </header>
 </div>`;
 const headerHtml = headerM;
