@@ -5,3 +5,5 @@ function cookie ( cookie_name ){
     cookie_date.setTime( cookie_date.getTime() -1);
     document.cookie = cookie_name += "=; expires=" + cookie_date.toGMTString();
 }
+cookie();
+console.log(cookie)
