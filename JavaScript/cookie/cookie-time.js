@@ -1,7 +1,7 @@
 //COOKIE TIME
 //COOKIE TIME/DATE CUSTOMER
-app.use(connect.cookieParser());
-app.use(connect.session({ secret: '7634570983222678997'} ));
+//app.use(connect.cookieParser());
+//app.use(connect.session({ secret: '7634570983222678997'} ));
 
 //function
 
