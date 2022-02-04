@@ -1,7 +1,7 @@
 class product {
     constructor() {
         this.classNameActive = 'btn_product_active';
-        this.labelAdd = 'Добавить в корзину';
+        this.labelAdd = 'В корзину';
         this.labelRemove = 'Удалить из корзины';
     }
     handleSetLocationStorage(element, id){
@@ -34,7 +34,7 @@ class product {
         	htmlCatalog += `
         	<li class='product-element'>
         		<span class="name_product">${name}</span>
-        		<img class="img_product" src="${img}"id="img_product"/>
+        		<a onclick="openPageProduct.show"><img class="img_product" src="${img}"id="img_product"/></a>
         		<span class="price_product">${price} ₽</span>
         		<button class="btn_product${activeClass}" id="btn_product"  onclick="productPage.handleSetLocationStorage(this, '${id}');">
                 ${activeText}
