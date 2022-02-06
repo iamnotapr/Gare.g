@@ -1,1 +1,2 @@
+RewriteEngine On
 DirectoryIndex gr.html
